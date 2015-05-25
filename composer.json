@@ -1,0 +1,21 @@
+{
+    "name": "gibboncms/liana-core",
+    "description": "Core library for Liana",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian De Deyne",
+            "email": "sebastiandedeyne@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GibbonCms\\Liana\\": "src/"
+        }
+    },
+    "require": {
+        "gibboncms/blog": "^0.1.0",
+        "gibboncms/pages": "^0.1.0",
+        "laravel/lumen-framework": "^5.0"
+    }
+}
