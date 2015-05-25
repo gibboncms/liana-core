@@ -16,6 +16,7 @@
     "require": {
         "gibboncms/blog": "^0.1.0",
         "gibboncms/pages": "^0.1.0",
-        "laravel/lumen-framework": "^5.0"
+        "laravel/lumen-framework": "^5.0",
+        "gibboncms/config": "^0.1.0"
     }
 }
