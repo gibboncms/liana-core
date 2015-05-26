@@ -18,6 +18,6 @@
         "gibboncms/pages": "~0.1",
         "laravel/lumen-framework": "^5.0",
         "gibboncms/config": "~0.1",
-        "gibboncms/blocks": "^0.1.0"
+        "gibboncms/blocks": "~0.1."
     }
 }
