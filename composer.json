@@ -13,11 +13,19 @@
             "GibbonCms\\Liana\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "GibbonCms\\Liana\\Test\\": "tests/" 
+        }
+    },
     "require": {
-        "gibboncms/blog": "~0.1",
-        "gibboncms/pages": "~0.1",
+        "gibboncms/blog": "^0.5",
+        "gibboncms/pages": "^0.5",
         "laravel/lumen-framework": "^5.0",
-        "gibboncms/config": "~0.1",
-        "gibboncms/blocks": "~0.1."
+        "gibboncms/config": "^0.5",
+        "gibboncms/blocks": "^0.5."
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.6"
     }
 }
