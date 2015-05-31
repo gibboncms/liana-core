@@ -15,17 +15,3 @@ if ( ! function_exists('liana'))
         return $modules->get($module);
     }
 }
-
-if ( ! function_exists('setting'))
-{
-    /**
-     * Get a liana setting
-     *
-     * @param  string $key
-     * @return mixed
-     */
-    function setting($key)
-    {
-        return app()->make('liana')->get('settings')->get($key);
-    }
-}
