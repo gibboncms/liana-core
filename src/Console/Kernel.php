@@ -2,19 +2,25 @@
 
 namespace GibbonCms\Liana\Console;
 
-use Laravel\Lumen\Application;
+use GibbonCms\Liana\Liana;
 use Laravel\Lumen\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
     /**
-     * @param  \Laravel\Lumen\Application $app
-     * @param array $commands
+     * @var array
      */
-    public function __construct(Application $app, array $commands)
+    protected $defaultCommands = [
+        'GibbonCms\Liana\Console\Commands\BuildCommand'
+    ];
+
+    /**
+     * @param  \GibbonCms\Liana\Liana $app
+     */
+    public function __construct(Liana $app, array $commands = [])
     {
         parent::__construct($app);
 
-        $this->commands = $commands;
+        $this->commands = array_merge($this->defaultCommands, $commands);
     }
 }
