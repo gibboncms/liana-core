@@ -15,3 +15,19 @@ if ( ! function_exists('liana'))
         return $modules->get($module);
     }
 }
+
+if ( ! function_exists('markdown'))
+{
+    /**
+     * Parse a string with liana's registered markdown parser
+     *
+     * @param  string $markdown
+     * @return string
+     */
+    function markdown($markdown)
+    {
+        $parser = app()->make('liana.markdown');
+
+        return $parser->parse($markdown);
+    }
+}
