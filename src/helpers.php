@@ -12,10 +12,6 @@ if ( ! function_exists('liana'))
     {
         $modules = app()->make('liana');
 
-        if ($module == null) {
-            return $modules;
-        }
-
         return $modules->get($module);
     }
 }
