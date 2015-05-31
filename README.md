@@ -1,4 +1,4 @@
-# GibbonCms Core
+# Liana Core
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gibboncms/liana-core.svg?style=flat-square)](https://packagist.org/packages/gibboncms/liana-core)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -7,6 +7,8 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/gibboncms/liana-core.svg?style=flat-square)](https://packagist.org/packages/gibboncms/liana-core)
 
 Liana is a dynamic, jekyll-like cms built with [GibbonCms components](https://github.com/gibboncms) and [Lumen](https://github.com/laravel/lumen).
+
+*This repository contains the core library for Liana. If you want to build a site with Liana, please refer to [this](https://github.com/gibboncms/liana) repository.*
 
 GibbonCms was created as a final assignment for my bachelor's degree in digital media at Artevelde University College Ghent.
 
