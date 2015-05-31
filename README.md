@@ -1,10 +1,10 @@
 # GibbonCms Core
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/gibboncms/liana.svg?style=flat-square)](https://packagist.org/packages/gibboncms/liana)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/gibboncms/liana-core.svg?style=flat-square)](https://packagist.org/packages/gibboncms/liana-core)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/gibboncms/liana/master.svg?style=flat-square)](https://travis-ci.org/gibboncms/liana)
-[![Quality Score](https://img.shields.io/scrutinizer/g/gibboncms/liana.svg?style=flat-square)](https://scrutinizer-ci.com/g/gibboncms/liana)
-[![Total Downloads](https://img.shields.io/packagist/dt/gibboncms/liana.svg?style=flat-square)](https://packagist.org/packages/gibboncms/liana)
+[![Build Status](https://img.shields.io/travis/gibboncms/liana-core/master.svg?style=flat-square)](https://travis-ci.org/gibboncms/liana-core)
+[![Quality Score](https://img.shields.io/scrutinizer/g/gibboncms/liana-core.svg?style=flat-square)](https://scrutinizer-ci.com/g/gibboncms/liana-core)
+[![Total Downloads](https://img.shields.io/packagist/dt/gibboncms/liana-core.svg?style=flat-square)](https://packagist.org/packages/gibboncms/liana-core)
 
 Liana is a dynamic, jekyll-like cms built with [GibbonCms components](https://github.com/gibboncms) and [Lumen](https://github.com/laravel/lumen).
 
@@ -17,7 +17,7 @@ GibbonCms was created as a final assignment for my bachelor's degree in digital 
 Via Composer
 
 ``` bash
-$ composer require gibboncms/liana
+$ composer require gibboncms/liana-core
 ```
 
 ## Usage
