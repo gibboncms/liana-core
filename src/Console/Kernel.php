@@ -11,7 +11,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $defaultCommands = [
-        'GibbonCms\Liana\Console\Commands\BuildCommand'
+        'GibbonCms\Liana\Console\Commands\BuildCommand',
+        'GibbonCms\Liana\Console\Commands\ClearCommand'
     ];
 
     /**
