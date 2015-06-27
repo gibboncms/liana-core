@@ -3,6 +3,8 @@
 namespace GibbonCms\Liana\Console\Commands;
 
 use Illuminate\Console\Command;
+use Queue;
+use Symfony\Component\Console\Input\InputOption;
 
 class BuildCommand extends Command
 {
@@ -27,8 +29,27 @@ class BuildCommand extends Command
      */
     public function fire()
     {
-        app()->make('liana')->setUp();
+        if ($this->input->getOption('now')) {
+            app()->make('liana')->setUp();
+            $this->info('Liana build successfull!');
+            app('log')->info('Liana build successfull!');
+            return;
+        }
 
-        $this->info('Liana build successfull!');
+        Queue::push('GibbonCms\Liana\Jobs\Build');
+
+        $this->info('Queued for build...');
+    }
+
+    /**
+     * Get the console command options.
+     *
+     * @return array
+     */
+    protected function getOptions()
+    {
+        return [
+            ['now', null, InputOption::VALUE_NONE, 'Immediately build (don\'t queue)'],
+        ];
     }
 }
